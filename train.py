@@ -33,6 +33,7 @@ def get_args():
     parser.add_argument(
         "--model_path", type=str, default="arjunguha/santacoder-lua-nofim"
     )
+    parser.add_argument("--tokenizer_id", type=str, default="bigcode/santacoder")
     parser.add_argument("--subset", type=str, default="train_data")
     parser.add_argument("--size_valid_set", type=int, default=4000)
     parser.add_argument("--streaming", action="store_true")
